@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>加载input from qg</title>
+    <script src="../q-input/js/jquery-1.11.3.js"></script>
+    <script src="../q-input/js/jquery.formCheck.js"></script>
+    <script src="../q-input/js/jquery.q.input.js"></script>
+    <style>
+    	.submit{
+    		display: inline-block;
+    		border: 1px solid #ccc;
+    		border-radius: 6px;
+    		padding: 3px 5px;
+    		font-family:'Microsoft yahei';
+    		font-size: 14px;
+    		cursor: pointer;
+    	}
+    	.submit.act:hover{
+    		background: #ee5511;
+    	}
+    	.submit.act{
+    		background: #ff9933;
+    		color: #fff;
+    	}
+    	.submit.dis{
+    		background: #ccc;
+    		color: #fff;
+    	}
+    	.submit.dis:hover{
+    		background: #aaa;
+    	}
+    </style>
+</head>
+<body>
+	<app q-input q-value="13898647673" q-title="标题:" q-col="in-1" q-size="normal" q-placeholder="我是占位符placeholder" q-name="q_first" q-id="q_first" q-readonly="false" q-vali="  required    emailCheck  " q-submit="s1"></app>
+	<div q-input q-value="xg-test2" q-title="标题:" q-col="in-1" q-size="normal" q-placeholder="我是占位符placeholder" q-name="q_second" q-id="q_second" q-readonly="false" q-submit="s1"></div>
+	<span class="submit dis s1" >提交</span>
+</body>
+</html>
